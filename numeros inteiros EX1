@@ -1,0 +1,23 @@
+
+package arraylistex1;
+import java.util.ArrayList;
+
+public class ArrayListEx1 {
+
+
+    public static void main(String[] args) {
+
+          ArrayList<String> listaDenumerosInteiros = new ArrayList<>();      
+    
+listaDenumerosInteiros.add("1" + "2" + "3" + "4" + "5" + "6");   
+
+    for (int i = 1; i < listaDenumerosInteiros.size(); i++) {
+            System.out.println("valores imformados pelo usuario:" + i + ": " + 
+                    listaDenumerosInteiros.get(i)); }
+
+            listaDenumerosInteiros.add("1,2,3,4,5");
+
+        System.out.println("Após escolher os numeros inteiros:");
+        for (String numeros : listaDenumerosInteiros) {
+            System.out.println(numeros);
+        }}}
