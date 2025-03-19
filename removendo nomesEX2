@@ -1,0 +1,32 @@
+
+package arraylistex2;
+
+import java.util.ArrayList;
+
+
+public class ArraylistEx2 {
+
+    public static void main(String[] args) {
+
+     
+        ArrayList<String> listaDeNomes = new ArrayList<>();
+
+        listaDeNomes.add("Ana");
+        listaDeNomes.add("Carlos");
+        listaDeNomes.add("Bruna");
+        listaDeNomes.add("Daniel");   
+        listaDeNomes.add("Eduardo");
+        
+ 
+        for (int i = 0; i < listaDeNomes.size(); i++) {
+            System.out.println("nomes:" + i + ": " + listaDeNomes.get(i));
+        }
+
+        listaDeNomes.remove("Ana");
+
+        System.out.println("Após remover nome:");
+        for (String fruta : listaDeNomes) {
+            System.out.println(fruta);
+        }      
+    }
+}
