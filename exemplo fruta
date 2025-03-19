@@ -1,0 +1,23 @@
+public class ArraylistEx2 {
+
+    public static void main(String[] args) {
+
+     
+        ArrayList<String> listaDeNomes = new ArrayList<>();
+
+        listaDeNomes.add("Maçã");
+        listaDeNomes.add("Banana");
+        listaDeNomes.add("Laranja");
+
+        for (int i = 0; i < listaDeNomes.size(); i++) {
+            System.out.println("Fruta #" + i + ": " + listaDeNomes.get(i));
+        }
+
+        listaDeNomes.remove("");
+
+        System.out.println("Após remover nome:");
+        for (String fruta : listaDeNomes) {
+            System.out.println(fruta);
+        }      
+    }
+}
